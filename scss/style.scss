@@ -137,6 +137,7 @@ footer {
       .front { 
         z-index: 2; 
         @include logo_svg('../logo.svg')
+        @include distort_animation();
       }
       .back { 
         @include logo_svg('../logo2.svg')

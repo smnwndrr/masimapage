@@ -26,3 +26,36 @@
   background-position: center;
   background-size: contain;
 }
+
+
+@mixin distort_animation {
+    -webkit-animation-name: distort;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-name: distort;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+}
+@-webkit-keyframes distort {
+    0%,21%,23%,24%,26%,74%,76%, 100% {
+        -webkit-transform: skewX(0deg);
+        -webkit-transform: skewY(0deg);
+
+        opacity: 1;        
+    }    
+    22% { opacity: .8; -webkit-transform: skewY(-7deg);}
+    25% { -webkit-transform: skewX(10deg); opacity: .8; }
+}
+@keyframes distort {
+    0%,21%,23%,24%,26%,74%,76%, 100% {
+        transform: skewX(0deg);
+        transform: skewY(0deg);
+        opacity: 1;        
+    }
+    22% { opacity: .8; transform: skewY(-7deg);}
+    25% { transform: skewX(10deg); opacity: .8; }
+
+}
