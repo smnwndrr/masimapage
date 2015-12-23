@@ -80,9 +80,13 @@ a {
 
 
 header {
+  z-index: 10;
+  height: 13vh;
+  padding-top: 3vh;
+
   h1 {
     font-family: 'Ruslan Display', cursive;
-    font-size: 7vh;
+    font-size: 10vh;
     font-weight: normal;
     @include webkit_reset();
   }
@@ -94,9 +98,6 @@ header {
       padding-top: 0.75vh;
       vertical-align: middle;
     }
-  
-  z-index: 10;
-  height: 7vh;
 }
 
 footer {
@@ -110,7 +111,6 @@ footer {
   font-size: 2.0vh;
   color: #000;
 	text-align: center;
-	display: inline-block;
   width: 100vw;
 
   .turnaround-container {
@@ -118,12 +118,12 @@ footer {
 
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -3.5vh;
+    padding-bottom: 1vh;
     height: 90vw;
     width: 90vw;
 
-    max-height: 50vh; 
-    max-width: 50vh;
+    max-height: 70vh; 
+    max-width: 70vh;
 
     &:hover .turnaround, .hover .turnaround { 
       transform: rotateY(180deg);
@@ -158,6 +158,7 @@ footer {
 
       .front,
       .back {
+        background-size: contain;
         position: absolute;
         top:0;
         backface-visibility: hidden;
