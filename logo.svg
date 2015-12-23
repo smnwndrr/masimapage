@@ -15,7 +15,7 @@
    viewBox="0 0 995.29998 995.30001"
    id="svg2"
    xml:space="preserve"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.48.4 r9939"
    sodipodi:docname="logo.svg"><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -25,8 +25,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1860"
-     inkscape:window-height="1191"
+     inkscape:window-width="1151"
+     inkscape:window-height="831"
      id="namedview19"
      showgrid="false"
      fit-margin-top="200"
@@ -34,8 +34,8 @@
      fit-margin-right="200"
      fit-margin-bottom="200"
      inkscape:zoom="0.45458635"
-     inkscape:cx="417.18526"
-     inkscape:cy="566.56175"
+     inkscape:cx="-64.236089"
+     inkscape:cy="669.09521"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -59,7 +59,7 @@
          id="feColorMatrix3005" /></filter></defs><g
      id="g2992"
      style="filter:url(#filter3001)"
-     transform="matrix(1.6577604,0,0,1.6577604,3.3887329,4.2176245)"><g
+     transform="translate(199.49999,200.00001)"><g
        id="g7"
        style="fill:#000000;fill-opacity:1"><rect
          width="124.7"
@@ -80,7 +80,7 @@
          y="73.699997"
          id="rect13"
          style="fill:#000000;fill-opacity:1" /></g><polygon
-       points="37.4,496.1 37.4,36.9 558.9,36.9 558.9,496.1 595.8,496.1 595.8,0 0.5,0 0.5,496.1 "
+       points="0.5,496.1 37.4,496.1 37.4,36.9 558.9,36.9 558.9,496.1 595.8,496.1 595.8,0 0.5,0 "
        id="polygon15"
        style="fill:#000000;fill-opacity:1" /><g
        id="g17"
