@@ -4,4 +4,4 @@ node_js:
 
 before_script:
   - npm install gulp gulp-util gulp-sass gulp-uglify gulp-rename gulp-minify-css gulp-notify gulp-concat gulp-plumber browser-sync gulp-gh-pages node-neat 
-script: gulp
+script: gulp deploy
