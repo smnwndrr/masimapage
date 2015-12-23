@@ -159,6 +159,7 @@ footer {
 
       .front,
       .back {
+        background-size: contain;
         position: absolute;
         top:0;
         backface-visibility: hidden;

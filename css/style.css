@@ -133,6 +133,7 @@ footer {
           padding-top: 45%; }
       .content .turnaround-container .turnaround .front,
       .content .turnaround-container .turnaround .back {
+        background-size: contain;
         position: absolute;
         top: 0;
         backface-visibility: hidden;
