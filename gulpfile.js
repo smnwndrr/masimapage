@@ -30,6 +30,7 @@ var plumber = require('gulp-plumber');
 var browserSync = require('browser-sync');
 var neat = require('node-neat');
 var reload = browserSync.reload;
+var ghPages = require('gulp-gh-pages');
 
 /* Scripts task */
 gulp.task('scripts', function() {
@@ -97,4 +98,9 @@ gulp.task('default', ['sass', 'browser-sync'], function () {
     gulp.watch(['*.svg', '*.html'], ['move_misc'])
     /* Watch .html files, run the bs-reload task on change. */
     gulp.watch(['*.html'], ['bs-reload']);
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
