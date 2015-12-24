@@ -31,3 +31,6 @@ node_modules
 .DS_Store
 
 *~
+
+#gulp gh-pages deploy directory
+.publish
