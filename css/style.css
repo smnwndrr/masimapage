@@ -65,11 +65,10 @@ a {
 
 header {
   z-index: 10;
-  height: 13vh;
-  padding-top: 3vh; }
+  height: 7vh; }
   header h1 {
     font-family: 'Ruslan Display', cursive;
-    font-size: 10vh;
+    font-size: 7vh;
     font-weight: normal;
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
@@ -93,16 +92,17 @@ footer {
   font-size: 2.0vh;
   color: #000;
   text-align: center;
+  display: inline-block;
   width: 100vw; }
   .content .turnaround-container {
     perspective: 1500;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 1vh;
+    margin-bottom: -3.5vh;
     height: 90vw;
     width: 90vw;
-    max-height: 70vh;
-    max-width: 70vh; }
+    max-height: 50vh;
+    max-width: 50vh; }
     .content .turnaround-container:hover .turnaround, .content .turnaround-container .hover .turnaround {
       transform: rotateY(180deg); }
     .content .turnaround-container .turnaround {
@@ -132,7 +132,6 @@ footer {
           padding-top: 45%; }
       .content .turnaround-container .turnaround .front,
       .content .turnaround-container .turnaround .back {
-        background-size: contain;
         position: absolute;
         top: 0;
         backface-visibility: hidden;
