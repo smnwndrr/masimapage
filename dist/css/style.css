@@ -66,6 +66,7 @@ a {
 header {
   z-index: 10; }
   header h1 {
+    height: 15vh;
     font-family: 'Ruslan Display', cursive;
     font-size: 7vh;
     font-weight: normal;
@@ -89,7 +90,7 @@ footer {
 .content_wrapper {
   /* centering content*/
   margin: auto;
-  margin-top: 12.5vh; }
+  margin-top: 13.5vh; }
 
 .content {
   font-family: 'Orbitron', cursive;
@@ -101,7 +102,7 @@ footer {
     perspective: 1500;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1vh;
+    margin-bottom: 5vh;
     height: 90vw;
     width: 90vw;
     max-height: 50vh;
