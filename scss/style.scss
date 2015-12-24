@@ -85,7 +85,7 @@ header {
   h1 {
     height: 15vh;
     font-family: 'Ruslan Display', cursive;
-    font-size: 7vh;
+    font-size: 10vh;
     font-weight: normal;
     @include webkit_reset();
   }
@@ -97,7 +97,6 @@ header {
       padding-top: 0.75vh;
       vertical-align: middle;
     }
-  
 }
 
 footer {
@@ -131,8 +130,8 @@ footer {
     height: 90vw;
     width: 90vw;
 
-    max-height: 50vh; 
-    max-width: 50vh;
+    max-height: 70vh; 
+    max-width: 70vh;
 
     &:hover .turnaround, .hover .turnaround { 
       transform: rotateY(180deg);
@@ -167,6 +166,7 @@ footer {
 
       .front,
       .back {
+        background-size: contain;
         position: absolute;
         top:0;
         backface-visibility: hidden;

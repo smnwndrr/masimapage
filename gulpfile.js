@@ -67,7 +67,7 @@ gulp.task('bs-reload', function () {
 });
 
 /* move misc files to dist/folder */
-gulp.task('move_misc', function () {
+gulp.task('copy_misc', function () {
     gulp.src(['*.svg', '*.html'])
     .pipe(gulp.dest('dist'))
 });
@@ -94,8 +94,8 @@ gulp.task('default', ['sass', 'browser-sync'], function () {
     gulp.watch(['scss/*.scss', 'scss/**/*.scss'], ['sass'])
     /* Watch app.js file, run the scripts task on change. */
     gulp.watch(['js/app.js'], ['scripts'])
-    /* Watch svgs and html, run the scripts task on change. */
-    gulp.watch(['*.svg', '*.html'], ['move_misc'])
+    /* Watch index.html for changes, copy to dist folder */
+    gulp.watch(['*.html', '*.svg'],['copy_misc'] )
     /* Watch .html files, run the bs-reload task on change. */
     gulp.watch(['*.html'], ['bs-reload']);
 });
