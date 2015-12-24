@@ -15,9 +15,8 @@ body {
   color: #fff;
   background-color: #000;
   text-align: center;
-	/*overflow: hidden;*/
+	overflow: hidden;
 	margin: 0 0;
-  height: 100vh;
 }
 
 
@@ -85,7 +84,7 @@ header {
   h1 {
     height: 15vh;
     font-family: 'Ruslan Display', cursive;
-    font-size: 10vh;
+    font-size: 7vh;
     font-weight: normal;
     @include webkit_reset();
   }
@@ -130,8 +129,8 @@ footer {
     height: 90vw;
     width: 90vw;
 
-    max-height: 70vh; 
-    max-width: 70vh;
+    max-height: 50vh; 
+    max-width: 50vh;
 
     &:hover .turnaround, .hover .turnaround { 
       transform: rotateY(180deg);

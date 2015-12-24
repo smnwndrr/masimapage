@@ -13,9 +13,8 @@ body {
   color: #fff;
   background-color: #000;
   text-align: center;
-  /*overflow: hidden;*/
-  margin: 0 0;
-  height: 100vh; }
+  overflow: hidden;
+  margin: 0 0; }
 
 hr {
   width: 50%;
@@ -136,6 +135,7 @@ footer {
           padding-top: 45%; }
       .content .turnaround-container .turnaround .front,
       .content .turnaround-container .turnaround .back {
+        background-size: contain;
         position: absolute;
         top: 0;
         backface-visibility: hidden;
