@@ -39,10 +39,10 @@ gulp.task('scripts', function() {
     'js/app.js'
     ])
     .pipe(concat('main.js'))
-    .pipe(gulp.dest('js'))
+    .pipe(gulp.dest('dist/js'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
-    .pipe(gulp.dest('js'));
+    .pipe(gulp.dest('dist/js'));
 });
 
 /* Sass task */
@@ -52,10 +52,10 @@ gulp.task('sass', function () {
     .pipe(sass({
         includePaths: ['scss'].concat(neat)
     }))
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('dist/css'))
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('dist/css'))
     /* Reload the browser CSS after every change */
     .pipe(reload({stream:true}));
 });
@@ -65,9 +65,15 @@ gulp.task('bs-reload', function () {
     browserSync.reload();
 });
 
+/* move misc files to dist/folder */
+gulp.task('move_misc', function () {
+    gulp.src(['*.svg', '*.html'])
+    .pipe(gulp.dest('dist'))
+});
+
 /* Prepare Browser-sync for localhost */
 gulp.task('browser-sync', function() {
-    browserSync.init(['css/*.css', 'js/*.js'], {
+    browserSync.init(['dist/css/*.css', 'dist/js/*.js'], {
         /*
         I like to use a vhost, WAMP guide: https://www.kristengrote.com/blog/articles/how-to-set-up-virtual-hosts-using-wamp, XAMP guide: http://sawmac.com/xampp/virtualhosts/
         */
@@ -75,7 +81,7 @@ gulp.task('browser-sync', function() {
         /* For a static server you would use this: */
         
         server: {
-            baseDir: './'
+            baseDir: './dist/'
         }
         
     });
@@ -87,6 +93,8 @@ gulp.task('default', ['sass', 'browser-sync'], function () {
     gulp.watch(['scss/*.scss', 'scss/**/*.scss'], ['sass'])
     /* Watch app.js file, run the scripts task on change. */
     gulp.watch(['js/app.js'], ['scripts'])
+    /* Watch svgs and html, run the scripts task on change. */
+    gulp.watch(['*.svg', '*.html'], ['move_misc'])
     /* Watch .html files, run the bs-reload task on change. */
     gulp.watch(['*.html'], ['bs-reload']);
 });
